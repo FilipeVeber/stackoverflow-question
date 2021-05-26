@@ -1,0 +1,107 @@
+########
+controller layer - myObject received
+{ VL_BAY_DE: 9999999999,
+  VL_BAY_PARA: 9999999999,
+  VL_EQP: 9999999999,
+  VL_PAGAMENTO_BASE: 9999999999,
+  DT_INICIO_VIGENCIA: '2021-05-24' }
+########
+
+########
+service layer - myObject received from controller
+{ VL_BAY_DE: 9999999999,
+  VL_BAY_PARA: 9999999999,
+  VL_EQP: 9999999999,
+  VL_PAGAMENTO_BASE: 9999999999,
+  DT_INICIO_VIGENCIA: '2021-05-24' }
+########
+
+########
+service layer - myObject has received some data (CD_FT is an entity relation to a parent record)
+{ VL_BAY_DE: 9999999999,
+  VL_BAY_PARA: 9999999999,
+  VL_EQP: 9999999999,
+  VL_PAGAMENTO_BASE: 9999999999,
+  DT_INICIO_VIGENCIA: '2021-05-24',
+  CD_FT_PAGAMENTO_BASE: 296,
+  CD_FT:
+   SauFt {
+     CD_SATRA: null,
+     USER_UPDATE: 'NB5801',
+     DATE_CREATE: '2021-05-26',
+     USER_CREATE: 'NB5801',
+     FL_ATIVO: 1,
+     DS_FT: 'Teste Cadastro FT',
+     NM_FT: 'Filipe - Teste nome 87',
+     CD_ONS: null,
+     CD_FT: 458,
+     VERSION: 0,
+     DATE_UPDATE: '2021-05-26',
+     DT_OPERACAO_COMERCIAL: '2021-05-23',
+     NR_NIVEL_TENSAO: null,
+     NR_EXTENSAO_LT: null,
+     VL_POTENCIA: null,
+     CD_FAMILIA_FT:
+      SauFamiliaFt {
+        VERSION: 0,
+        DATE_UPDATE: '2020-09-11',
+        USER_UPDATE: 'SCRIPT',
+        DATE_CREATE: '2020-09-11',
+        USER_CREATE: 'SCRIPT',
+        NR_FATOR_KP: 10,
+        NR_FATOR_KO: 150,
+        NR_FREQ_DESLIGAMENTO: '0',
+        NM_FAMILIA_FT: '(*) Qualquer nível de Tensão',
+        CD_FAMILIA_FT: 1,
+        CD_TIPO_FT: [SauTipoFt] },
+     SAU_FT_PAGAMENTO_BASES: [],
+     SAU_INSTALACAO_FTS: [] },
+  USER_CREATE: 'NB5801',
+  USER_UPDATE: 'NB5801' }
+########
+
+########
+repository layer - myObject receveid from service (the next command is the repo.insert)
+{ VL_BAY_DE: 9999999999,
+  VL_BAY_PARA: 9999999999,
+  VL_EQP: 9999999999,
+  VL_PAGAMENTO_BASE: 9999999999,
+  DT_INICIO_VIGENCIA: '2021-05-24',
+  CD_FT_PAGAMENTO_BASE: 296,
+  CD_FT:
+   SauFt {
+     CD_SATRA: null,
+     USER_UPDATE: 'NB5801',
+     DATE_CREATE: '2021-05-26',
+     USER_CREATE: 'NB5801',
+     FL_ATIVO: 1,
+     DS_FT: 'Teste Cadastro FT',
+     NM_FT: 'Filipe - Teste nome 87',
+     CD_ONS: null,
+     CD_FT: 458,
+     VERSION: 0,
+     DATE_UPDATE: '2021-05-26',
+     DT_OPERACAO_COMERCIAL: '2021-05-23',
+     NR_NIVEL_TENSAO: null,
+     NR_EXTENSAO_LT: null,
+     VL_POTENCIA: null,
+     CD_FAMILIA_FT:
+      SauFamiliaFt {
+        VERSION: 0,
+        DATE_UPDATE: '2020-09-11',
+        USER_UPDATE: 'SCRIPT',
+        DATE_CREATE: '2020-09-11',
+        USER_CREATE: 'SCRIPT',
+        NR_FATOR_KP: 10,
+        NR_FATOR_KO: 150,
+        NR_FREQ_DESLIGAMENTO: '0',
+        NM_FAMILIA_FT: '(*) Qualquer nível de Tensão',
+        CD_FAMILIA_FT: 1,
+        CD_TIPO_FT: [SauTipoFt] },
+     SAU_FT_PAGAMENTO_BASES: [],
+     SAU_INSTALACAO_FTS: [] },
+  USER_CREATE: 'NB5801',
+  USER_UPDATE: 'NB5801',
+  DATE_CREATE: 2021-05-26T15:32:17.167Z,
+  DATE_UPDATE: 2021-05-26T15:32:17.167Z }
+########
